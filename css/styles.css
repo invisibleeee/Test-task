@@ -1,0 +1,172 @@
+html {
+    font-size: 62.5%;
+  }
+  body {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.6;
+    font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #222;
+  }
+  
+  p {
+    margin: 0;
+  }
+
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 6rem;
+    font-weight: 400;
+    color: #ad6c12;
+    padding-top: 50px;
+    margin: 0;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+
+  .wrapper {
+    background-color: #d8c8c4;
+    background-size: cover;
+  }
+
+  /*______________ Cards_______________ */
+
+  .container-cards { 
+    max-width: 960px;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 50px auto;
+  }
+  
+  .card {
+    display: flex;
+    flex: 1 1 300px;
+    flex-flow: column wrap;
+    background-color: white;
+    margin: 10px;
+  }
+
+  .card a {
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 600;
+    text-decoration: none; 
+    text-transform: uppercase;
+    border-bottom: 8px solid #FFA500;
+  }
+
+  .card-text {
+      padding: 20px 0 30px 20px;
+  }
+
+  .card-text_date {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+
+  .card-text_title {
+    font-weight: 600;
+  }
+
+  .card-text_description {
+    padding-bottom: 15px;
+}
+
+  /*______________Quote_______________ */
+
+  .container-quote {
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+      background-color: #4a1100;
+      background-size: cover;
+  }
+
+  .quote-quotes {
+      font-family: "RalewayMedium", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 5rem;
+      font-weight: 900;
+      color: white;
+      padding-top: 20px;
+  }
+
+  .quote-text {
+      display: flex;
+      flex-flow: row wrap;
+      font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 1.8rem;
+      text-align: center;
+      color: rgba(255,255,255,.9);
+      padding-bottom: 20px;
+  }
+
+  .quote-author {
+      display: flex;
+      flex-flow: row wrap;
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: white;
+  }
+
+  .quote-items {
+      display: flex;
+      flex-flow: row wrap;
+  }
+
+  .item {
+      margin-right: 20px;
+      padding: 40px 0;
+  }
+
+  /*______________ Footer_______________ */
+
+  .container-footer {
+      max-width: 960px;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      padding: 50px 0;
+      margin: 0 auto;
+  }
+
+  .description {
+      width: 50%;
+      display: flex;
+      flex-flow: column wrap;
+  }
+
+  .links {
+      display: flex;
+      flex-flow: column wrap;
+      margin-right: 100px;
+  }
+
+  .links a {
+      color: rgb(0, 0, 0);
+      font-weight: 600;
+      text-decoration: none; 
+  }
+
+  .link-links {
+      display: flex;
+      flex-flow: column wrap;
+  }
+
+  .title-description {
+      color: rgb(0, 0, 0);
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 2rem;
+      margin-bottom: 20px;
+  }
+
+  .title-link {
+      color: rgb(0, 0, 0);
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 25px;
+  }
