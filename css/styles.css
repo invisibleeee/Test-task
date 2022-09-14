@@ -27,26 +27,24 @@ html {
     max-width: 100%;
   }
 
-  .wrapper {
-    background-color: #d8c8c4;
-    background-size: cover;
-  }
+
 
   /*______________ Cards_______________ */
 
   .container-cards { 
     max-width: 960px;
     display: flex;
-    flex-flow: row wrap;
-    margin: 50px auto;
+    flex-flow: row nowrap;
+    margin: 0 auto;
+    padding: 50px 0;
   }
   
   .card {
     display: flex;
-    flex: 1 1 300px;
-    flex-flow: column wrap;
+    flex: 0 0 339px;
+    flex-direction: column;
     background-color: white;
-    margin: 10px;
+    padding: 0px 5px;
   }
 
   .card a {
