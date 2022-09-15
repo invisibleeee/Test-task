@@ -28,6 +28,24 @@ html {
     max-width: 100%;
   }
 
+  .fa {
+    color: #4a1100;
+    font-size: 24px;
+  }
+
+  .icon-circle {
+    text-align: center;
+    width: 46px;
+    height: 46px;
+    line-height: 46px;
+    border-radius: 23px;
+    background-color: #ffffff;
+  }
+
+  .icon-circle i {
+    line-height: 46px;
+  }
+
   .container {
     max-width: 1088px;
     margin: 0 auto;
@@ -125,7 +143,7 @@ html {
 
   /*______________Quote_______________ */
 
-  .container-quote {
+  .quote {
       background-color: #4a1100;
       background-size: cover;
       padding: 39px 0px 48px 0px;
@@ -159,7 +177,7 @@ html {
     color: #ffffff;
   }
 
-  .quote-items {
+  .quote-row {
       display: flex;
       flex-flow: row wrap;
       justify-content: center;
@@ -170,89 +188,51 @@ html {
   }
 
   /*______________ Footer_______________ */
-
-  .container-footer {
-      max-width: 960px;
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: center;
-      padding: 50px 0;
-      margin: 0 auto;
+  
+  .footer {
+    background-color: #dbcfcc;
+    padding: 63px 0px 80px 0px;
   }
-
-  .description {
-      width: 50%;
-      display: flex;
-      flex-flow: column wrap;
+  .footer__row {
+    display: flex;
+    flex-direction: row;
   }
-
-  .links {
-      display: flex;
-      flex-flow: column wrap;
-      margin-right: 100px;
+  .footer__description {
+    flex: 1 0 312px;
+    margin: 0px 239px 0px 0px;
   }
-
-  .links a {
-      color: rgb(0, 0, 0);
-      font-weight: 600;
-      text-decoration: none; 
+  .footer__description-title {
+    font-size: 25px;
+    line-height: 33px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0px 0px 50px 0px;
+    color: #2d2f2a;
   }
-
-  .link-links {
-      display: flex;
-      flex-flow: column wrap;
+  .footer__description-text {
+    font-size: 18.8px;
+    line-height: 29px;
+    color: #2d2f2a;
   }
-
-  .title-description {
-      color: rgb(0, 0, 0);
-      font-weight: 600;
-      text-transform: uppercase;
-      font-size: 2rem;
-      margin-bottom: 20px;
+  .footer__links {
+  }
+  .footer__link-title {
+    font-size: 20.9px;
+    line-height: 33px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #2d2f2a;
+    margin: 0px 0px 51px 0px;
   }
 
-  .title-link {
-      color: rgb(0, 0, 0);
-      font-weight: 600;
-      text-transform: uppercase;
-      margin-bottom: 25px;
+  .footer__link {
+    font-size: 20.9px;
+    line-height: 33px;
+    font-weight: 700;
+    color: #2d2f2a;
   }
-
-  .wrapper {
+  .footer__column {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 118px 0px 0px;
   }
-  .cards {
-  
-      &__title {
-      }
-  
-      &__row {
-      }
-  
-      &__item {
-      }
-  }
-  .container {
-  }
-  .card {
-  
-      &__image {
-      }
-  }
-  .card-body {
-  }
-  .card-text {
-  
-      &_date {
-      }
-  
-      &_title {
-      }
-  
-      &_description {
-      }
-  
-      &_button {
-      }
-  }
-
-  
