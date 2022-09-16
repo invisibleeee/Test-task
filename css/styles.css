@@ -16,16 +16,17 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 /*--------------------*/
 
+/*!Проверка границ!*/
+/*
+* {
+  outline: solid red;
+}*/
 
 html {
 
   }
   body {
     font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  }
-  
-  img {
-    max-width: 100%;
   }
 
   .fa {
@@ -46,22 +47,24 @@ html {
     line-height: 46px;
   }
 
+  
+  .wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
   .container {
-    max-width: 1088px;
+    max-width: 1080px;
+    overflow: hidden;
     margin: 0 auto;
   }
 
   /*______________ Cards_______________ */
 
-
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-  }
-
   .cards {
     background-color: #dbcfcc;
-    padding: 77px 0px 122px 0px;
+    padding: 77px 30px 122px 30px;
   }
 
   .cards__title {
@@ -80,16 +83,18 @@ html {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    margin: 0px 0px;
   }
   
   .cards__item {
     display: flex;
-    flex: 0 1 339px;
+    flex: 0 0 31.15%;
     flex-direction: column;
+    padding: 0px 0px;
   }
 
   .card__image {
-
+    max-width: 100%;
   }
 
   .card-body {
@@ -195,11 +200,10 @@ html {
   }
   .footer__row {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
   }
   .footer__description {
-    flex: 1 0 312px;
-    margin: 0px 239px 0px 0px;
+    flex: 1 1 312px;
   }
   .footer__description-title {
     font-size: 25px;
@@ -235,4 +239,9 @@ html {
     display: flex;
     flex-direction: column;
     margin: 0px 118px 0px 0px;
+  }
+
+
+  @media screen {
+    
   }
