@@ -114,11 +114,12 @@ body {
 /*______________ Cards_______________ */
 .cards {
   background-color: #dbcfcc;
-  padding: 77px 0px 122px 0px;
+  padding-top: calc(30px + 47 * ((100vw - 320px) / 760));
+  padding-bottom: 122px;
 }
 
 .cards__title {
-  margin: 0px 0px 73px 0px;
+  margin-bottom: calc(30px + 43 * ((100vw - 320px) / 760));
 }
 
 .cards__title h1 {
@@ -132,15 +133,17 @@ body {
 .cards__row {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 0px 0px;
 }
 
 .cards__item {
   display: flex;
+  overflow: hidden;
   flex: 0 0 31.15%;
   flex-direction: column;
   padding: 0px 0px;
+  border-radius: 5px;
 }
 
 .card__image {
@@ -198,7 +201,6 @@ body {
 /*______________Quote_______________ */
 .quote {
   background-color: #4a1100;
-  background-size: cover;
   padding: 39px 0px 48px 0px;
 }
 
@@ -292,7 +294,10 @@ body {
   margin: 0px 118px 0px 0px;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 475px) {
+  .cards {
+    padding-bottom: 0px;
+  }
   .cards__title {
     margin: 0px 0px 30px 0px;
   }
@@ -304,7 +309,7 @@ body {
   .cards__item {
     display: flex;
     flex-direction: column;
-    margin: 0px 0px 15px 0px;
+    border-radius: 5px;
   }
   .footer {
     padding: 20px 15px 20px 15px;

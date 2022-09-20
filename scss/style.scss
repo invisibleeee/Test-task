@@ -16,7 +16,7 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 /*--------------------*/
 
-$maxWidth: 1920;
+$maxWidth: 1080;
 $maxWidthContainer: 1080;
 
 @mixin adaptiv-value($property, $startSize, $minSize, $type) {
@@ -86,12 +86,14 @@ html {
   /*______________ Cards_______________ */
 
   .cards {
+
     background-color: #dbcfcc;
-    padding: 77px 0px 122px 0px;
+    @include adaptiv-value(padding-top, 77, 30, 0);
+    padding-bottom: 122px;
   }
 
   .cards__title {
-    margin: 0px 0px 73px 0px;
+    @include adaptiv-value(margin-bottom, 73, 30, 0);
   }
 
   .cards__title h1 {
@@ -105,15 +107,17 @@ html {
   .cards__row { 
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 0px 0px;
   }
   
   .cards__item {
     display: flex;
+    overflow: hidden;
     flex: 0 0 31.15%;
     flex-direction: column;
     padding: 0px 0px;
+    border-radius: 5px;
   }
 
   .card__image {
@@ -173,7 +177,6 @@ html {
 
   .quote {
       background-color: #4a1100;
-      background-size: cover;
       padding: 39px 0px 48px 0px;
   }
 
@@ -241,8 +244,9 @@ html {
     line-height: 29px;
     color: #2d2f2a;
   }
-  .footer__links {
-  }
+
+  .footer__links {}
+  
   .footer__link-title {
     font-size: 20.9px;
     line-height: 33px;
@@ -264,7 +268,11 @@ html {
     margin: 0px 118px 0px 0px;
   }
 
-  @media (max-width: 425px) {
+  @media (max-width: 475px) {
+
+    .cards {
+      padding-bottom: 0px;
+    }
 
     .cards__title {
       margin: 0px 0px 30px 0px;
@@ -279,8 +287,7 @@ html {
     .cards__item {
       display: flex;
       flex-direction: column;
-      margin: 0px 0px 15px 0px;
-      
+      border-radius: 5px;
     }
 
     .footer {
