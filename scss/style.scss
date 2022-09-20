@@ -1,20 +1,4 @@
-/*Обнуление*/
-*{padding: 0;margin: 0;border: 0;}
-*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
-:focus,:active{outline: none;}
-a:focus,a:active{outline: none;}
-nav,footer,header,aside{display: block;}
-html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
-input,button,textarea{font-family:inherit;}
-input::-ms-clear{display: none;}
-button{cursor: pointer;}
-button::-moz-focus-inner{padding:0;border:0;}
-a,a:visited{text-decoration: none;}
-a:hover{text-decoration: none;}
-ul li{list-style: none;}
-img{vertical-align: top;}
-h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
-/*--------------------*/
+@import 'base';
 
 $maxWidth: 1080;
 $maxWidthContainer: 1080;
@@ -86,19 +70,18 @@ html {
   /*______________ Cards_______________ */
 
   .cards {
-
     background-color: #dbcfcc;
-    @include adaptiv-value(padding-top, 77, 30, 0);
-    padding-bottom: 122px;
+    @include adaptiv-value(padding-top, 77, 25, 0);
+    @include adaptiv-value(padding-bottom, 122, 15, 0);
   }
 
   .cards__title {
-    @include adaptiv-value(margin-bottom, 73, 30, 0);
+    @include adaptiv-value(margin-bottom, 73, 25, 0);
   }
 
   .cards__title h1 {
+    @include adaptiv-value(font-size, 55, 30, 0);
     text-align: center;
-    font-size: 55px;
     font-weight: 400;
     text-transform: uppercase;
     color: #ad6c12;
@@ -268,69 +251,4 @@ html {
     margin: 0px 118px 0px 0px;
   }
 
-  @media (max-width: 475px) {
-
-    .cards {
-      padding-bottom: 0px;
-    }
-
-    .cards__title {
-      margin: 0px 0px 30px 0px;
-    }
-
-    .cards__row { 
-      display: flex;
-      flex-flow: column;
-      margin: 0px 0px;
-    }
-        
-    .cards__item {
-      display: flex;
-      flex-direction: column;
-      border-radius: 5px;
-    }
-
-    .footer {
-      padding: 20px 15px 20px 15px;
-    }
-    
-    .footer__row {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: space-between;
-    }
-    .footer__description {
-      text-align: center;
-      flex: 1 1 100%;
-      margin: 0px 0px 30px 0px;
-    }
-    .footer__description-title {
-      font-size: 20px;
-      line-height: 20px;
-      margin: 0px 0px 5px 0px;
-    }
-    .footer__description-text {
-      font-size: 16px;
-      line-height: 24px;
-    }
-    
-    .footer__link-title {
-      font-size: 18px;
-      line-height: 26px;
-      font-weight: 700;
-      text-transform: uppercase;
-      color: #2d2f2a;
-      margin: 0px 0px 5px 0px;
-    }
-  
-    .footer__link {
-      font-size: 16px;
-      line-height: 25px;
-      font-weight: 700;
-    }
-    .footer__column {
-      display: flex;
-      flex-direction: column;
-      margin: 0px 0px 0px 0px;
-    }
-  }
+  @import 'adaptive';
